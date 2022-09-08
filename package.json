@@ -6,10 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "lint:js": "eslint . --ext .js",
-    "lint:js:fix": "npm run lint:js -- --fix",
-    "test:related": "jest --bail --findRelatedTests"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
