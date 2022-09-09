@@ -1,7 +1,5 @@
 import { Injectable  } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
-import { EmailValidator } from "@angular/forms";
-import { interval, map, merge, mergeAll, mergeMap, Subscribable, Subscription, take, tap } from 'rxjs';
 
 @Injectable({
     providedIn : 'root'
