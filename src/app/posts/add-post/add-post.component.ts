@@ -14,7 +14,7 @@ export class AddPostComponent implements OnInit {
 
   postForm! : FormGroup;
 
-  MIN_TITLE_LENGTH : number = 5;
+  MIN_TITLE_LENGTH  = 5;
 
   constructor(private store : Store<AppState>) { }
 

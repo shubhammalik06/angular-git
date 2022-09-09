@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { Observable, Subscribable, Subscription } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { Post } from 'src/app/shared/interfaces/common.interface';
 import { AppState } from 'src/app/shared/store/app.state';
 import { getPostsById } from '../state/post.selector';

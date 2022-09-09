@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { interval, map, merge, mergeAll, mergeMap, Subscribable, Subscription, take, tap } from 'rxjs';
+import { interval, map, Subscription, tap } from 'rxjs';
 
 @Component({
   selector: 'app-rxjs',
@@ -44,11 +44,11 @@ export class RxjsComponent implements OnInit {
   }
 
   mergeOperators(){
-    let source1 = interval(1000).pipe(map((val) => 'value from the source 1 = ' + val), 
-    take(5));
+  //  const source1 = interval(1000).pipe(map((val) => 'value from the source 1 = ' + val), 
+ //   take(5));
 
-    let source2 = interval(2000).pipe(map((val) => 'value from the source 2 = ' + val), 
-    take(5));
+   // const source2 = interval(2000).pipe(map((val) => 'value from the source 2 = ' + val), 
+   // take(5));
    
     // // merge demo
 

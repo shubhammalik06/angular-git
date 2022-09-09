@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { CounterState } from 'src/app/shared/interfaces/common.interface';
 import { customChannelName, customIncrement } from 'src/app/counter/state/counter.actions';
 import { getChannelName } from 'src/app/counter/state/counter.selector';
 import { AppState } from 'src/app/shared/store/app.state';

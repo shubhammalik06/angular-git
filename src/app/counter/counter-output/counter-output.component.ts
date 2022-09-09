@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs';
-import { CounterState } from 'src/app/shared/interfaces/common.interface';
 import { getCounter } from 'src/app/counter/state/counter.selector';
 import { AppState } from 'src/app/shared/store/app.state';
 
