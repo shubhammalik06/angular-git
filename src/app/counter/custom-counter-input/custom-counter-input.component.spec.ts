@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { provideMockStore } from '@ngrx/store/testing';
 import { CustomCounterInputComponent } from './custom-counter-input.component';
 
 describe('CustomCounterInputComponent', () => {
@@ -8,7 +8,8 @@ describe('CustomCounterInputComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CustomCounterInputComponent ]
+      declarations: [ CustomCounterInputComponent ],
+      providers: [provideMockStore({})],
     })
     .compileComponents();
 

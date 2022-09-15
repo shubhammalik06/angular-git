@@ -17,10 +17,8 @@ export class CustomCounterInputComponent implements OnInit {
   constructor(private store : Store<AppState>) { }
 
   ngOnInit(): void {
-
     this.store.select(getChannelName).subscribe(data => {
       this.channelName = data;
-      console.log('channel name');
     })
   }
 

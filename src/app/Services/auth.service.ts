@@ -7,9 +7,7 @@ import { HttpClient } from '@angular/common/http';
 
 export class AuthService{
 
-    constructor(private http: HttpClient){
-
-    }
+    constructor(private http: HttpClient){}
 
     login(email:string, password:string){
        return this.http.post('https://dummy.restapiexample.com/api/v1/create', {
@@ -19,5 +17,17 @@ export class AuthService{
         }
        });
     }
-}
 
+    getErrorMessages(message:string){
+        switch(message){
+            case 'EMAIL_NOT_FOUND':
+                return 'Email not found';
+            case 'INVALID_PASSWORD':
+                return 'Invalid Password';
+            case 'TOO_MANY_ATTEMPTS' : 
+                return 'Too Many Attempts.'
+            default:
+                return message;
+        }
+    }
+}

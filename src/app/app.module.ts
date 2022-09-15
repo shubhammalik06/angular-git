@@ -13,7 +13,7 @@ import { CounterOutputComponent } from './counter/counter-output/counter-output.
 import { CounterButtonsComponent } from './counter/counter-buttons/counter-buttons.component';
 import { StoreModule } from '@ngrx/store';
 import { CustomCounterInputComponent } from './counter/custom-counter-input/custom-counter-input.component';
-import {appReducer} from './shared/store/app.state';
+import { appReducer } from './shared/store/app.state';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from 'src/environments/environment.prod';
 import { PostsComponent } from './posts/posts.component';
@@ -25,6 +25,8 @@ import { EffectsModule } from '@ngrx/effects';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AuthEffects } from './login/state/auth.effects';
+import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { AuthEffects } from './login/state/auth.effects';
     UpdateComponent,
     RxjsComponent,
     LoginComponent,
+    LoadingSpinnerComponent,
+    HomeComponent,
 
   ],
   imports: [

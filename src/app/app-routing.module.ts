@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CounterComponent } from './counter/counter/counter.component';
 import { FirstComponent } from './first/first.component';
+import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { MatGridListComponent } from './material-design/angular-material/mat-grid-list/mat-grid-list.component';
 import { MatSliderComponent } from './material-design/angular-material/mat-slider/mat-slider.component';
@@ -16,7 +17,11 @@ const routes: Routes = [
   {
     path : '',
     pathMatch : 'full',
-    redirectTo: '/counter'
+    redirectTo: '/home'
+  },
+  {
+    path : 'home',
+    component : HomeComponent
   },
   {
     path : 'login',
@@ -35,7 +40,7 @@ const routes: Routes = [
     component : MatGridListComponent
   },
   {
-    path : 'reactive-forms',
+    path: 'reactive-forms',
     component : ReactiveFormsComponent
   },
   {

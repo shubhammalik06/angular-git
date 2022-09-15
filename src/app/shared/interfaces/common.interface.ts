@@ -12,3 +12,8 @@ export interface Post{
 export interface PostsState{
     posts : Post[];
 }
+
+export interface SharedState{
+    showLoading : boolean;
+    errorMessage : string;
+}
