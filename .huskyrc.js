@@ -1,6 +1,6 @@
 // .huskyrc.js
 module.exports = {
-    hooks: {
-      "pre-commit": "lint-staged",
-    },
-  };
+  hooks: {
+    "pre-commit": "lint-staged",
+  },
+};
