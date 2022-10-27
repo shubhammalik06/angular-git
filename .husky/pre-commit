@@ -3,6 +3,6 @@
 
 npx prettier --write .
 npm run lint
-
+npm test --code-coverage
 npm run build
 echo $? && exit 0
