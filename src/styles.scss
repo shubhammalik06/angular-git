@@ -1,21 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 10px; 
-  padding : 10px;  
-  font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
 
-@import '~@angular/material/theming';
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:300,400,500');
+a.navbar-brand {
+  font-size: 28px;
+}
+
+@import "~@angular/material/theming";
+
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:300,400,500");
 
 @include mat-core();
 
 $my-theme-primary: mat-palette($mat-deep-orange);
-$my-theme-accent:  mat-palette($mat-amber, A200, A100, A400);
-$my-theme:   mat-light-theme($my-theme-primary, $my-theme-accent);
+$my-theme-accent: mat-palette($mat-amber, A200, A100, A400);
+$my-theme: mat-light-theme($my-theme-primary, $my-theme-accent);
 $my-typography: mat-typography-config(
-  $font-family: '"IBM Plex Sans Condensed"'
+  $font-family: '"IBM Plex Sans Condensed"',
 );
 
 .my-theme {
@@ -25,7 +35,9 @@ $my-typography: mat-typography-config(
     font-family: mat-font-family($my-typography, body-1);
     line-height: mat-line-height($my-typography, body-1);
 
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
       font-family: mat-font-family($my-typography, body-1);
     }
   }
